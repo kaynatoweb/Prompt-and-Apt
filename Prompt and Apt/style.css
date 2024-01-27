@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Charm', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+/*--------Utility class---*/
+
+.bg-blue {
+    background: lightskyblue;
+}
+
+/*--------Header--------*/
+
+header {
+    background-image: url('technology.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 0;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.header-content .logo,
+.header-content .navbar {
+    margin: 30px 40px;
+}
+
+header .header-content .logo p {
+    font-size: 2rem;
+    font-weight: 800;
+    z-index: 1000;
+    color: rgb(194, 14, 14);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 12px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar ul li:hover a {
+    color: steelblue;
+}
+
+.navbar ul li a:active {
+    background-color: green;
+}
+
+.header-text {
+    position: absolute;
+    bottom: 18rem;
+    left: 4rem;
+    color: white;
+    z-index: 100;
+}
+
+.header-text h2 {
+    margin-bottom: 10px;
+}
+
+.packages {
+    text-align: center;
+    margin: 5rem auto;
+    padding: 2rem auto;
+}
+
+.packages h1 {
+    margin: 0.5rem;
+    color: rgb(194, 14, 14);
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.packages p {
+    padding: 0.4rem;
+    line-height: 1.5rem;
+    word-spacing: 2px;
+}
+
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 3rem 2rem;
+}
+
+.web-dev {
+    position: relative;
+    margin: 2rem 0;
+}
+
+.web-dev-img {
+    position: relative;
+    height: 80%;
+    width: 80%;
+}
+
+.web-dev-img img {
+    height: 200px;
+    width: 295px;
+}
+
+.overlay {
+    position: absolute;
+    height: 200px;
+    width: 295px;
+    top: 0;
+    left: 0;
+    background: rgba(158, 158, 158, 0.7);
+    opacity: 0;
+}
+
+.web-dev:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h5 a {
+    bottom: 45%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    border: 1px solid white;
+    border-radius: 2px;
+    color: white;
+    padding: .2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.web-dev-text {
+    margin-top: -25px;
+}
+
+.web-dev-text h3 {
+    color: #555;
+}
+
+.pricing {
+    background: rgb(20, 20, 51);
+    height: 600px;
+    padding: 25px 0;
+    color: #fff;
+}
+
+.pricing .pricing-group {
+    text-align: center;
+    color: #fff;
+    margin: 15px 0;
+}
+
+.pricing .pricing-group h3 {
+    margin-bottom: 8px;
+}
+
+.pricing .pricing-group p {
+    margin-bottom: 45px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 15px 20px;
+}
+
+.pricing-card1 {
+    background: lightpink;
+    padding: 10px 20px;
+    margin: 25px;
+    border-radius: 10px;
+}
+
+.pricing-card1 ul li {
+    list-style-type: none;
+}
+
+.bg-blue {
+    background: lightskyblue;
+}
+
+.pricing-card1-heading h4 {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.pricing-card1-heading p {
+    margin-bottom: 20px;
+}
+
+.pricing-card1-subheading p span {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.pricing-card1-subheading p {
+    border-bottom: 2px solid lightgrey;
+    margin-bottom: 20px;
+}
+
+.pricing-card1 ul li {
+    margin-bottom: 10px;
+}
+
+.pricing-card1 ul li i {
+    margin-right: 7px;
+}
+
+.pricing-card1 button {
+    border: none;
+    outline: none;
+    background: lightskyblue;
+    font-size: 20px;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin: 25px 0;
+    color: white;
+    border-radius: 20px;
+}
+
+.pricing-card1 .btn-bg {
+    background: lightpink;
+}
+
+
+/*---------Testimonials---------*/
+
+.Testimonials {
+    margin-top: 150px;
+}
+
+.Testimonials-heading h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(194, 14, 14);
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 30px;
+}
+
+.testimonials-text {
+    background: midnightblue;
+    color: #fff;
+    padding: 20px 22px;
+    margin: 15px 15px;
+}
+
+.testimonials-text p:nth-child(2) {
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+    font-weight: bold;
+}
+
+/*---------footer--------------*/
+
+.footer {
+    margin-top: 50px;
+    background: rgb(20, 20, 51);
+    height: 450px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    padding: 2rem 1rem;
+}
+
+.newsletter {
+    border-radius: 1.5rem;
+    background: white;
+    padding: 1rem;
+}
+
+.newsletter h4 {
+    margin: 1.2rem 0;
+}
+
+.newsletter p {
+    width: 20rem;
+}
+
+.newsletter form input {
+    outline: none;
+    border: 1px solid #555;
+    margin: 1.5rem 0;
+    width: 20rem;
+    padding: .5rem;
+    border-radius: .2rem;
+}
+
+.newsletter form button {
+    width: 10rem;
+    margin-left: 4.4rem;
+    padding: .3rem;
+    background: rgb(20, 20, 51);
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-grid .About {
+    color: white;
+}
+
+.footer-grid .About h4 {
+    margin-bottom: 1.1rem;
+    font-size: 1.2rem;
+}
+
+.footer-grid .contact h4 {
+    margin-bottom: 1.1rem;
+    font-size: 1.2rem;
+}
+
+.footer-grid .contact {
+    color: white;
+}
+
+.footer .copyright {
+    text-align: center;
+    color: white;
+    margin-top: 2rem;
+}
+
+.contact .socials {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    gap: 1.5rem;
+}
+
+.contact .socials i {
+    margin-left: .8rem;
+    cursor: pointer;
+}
+
+.contact .socials .fa-instagram {
+    color: brown;
+}
+
+.contact .socials .fa-twitter {
+    color: lightskyblue;
+}
+
+.contact .socials .fa-facebook {
+    color: blue;
+}
+
+.contact .socials .fa-whatsapp {
+    color: green;
+}
+
+
+/*----------Our Service---------------*/
+
+
+.our-services .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.our-services .header-content .logo,
+.our-services .header-content .navbar {
+    margin: 30px 40px;
+}
+
+.our-services .header-content .logo p {
+    font-size: 2rem;
+    font-weight: 800;
+    z-index: 1000;
+    color: rgb(194, 14, 14);
+}
+
+.our-services .header-content .navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.our-services .navbar ul li {
+    margin: 0 12px;
+}
+
+.our-services .navbar ul li a {
+    text-decoration: none;
+    color: rgb(60, 60, 122);
+    font-weight: bold;
+}
+
+.our-services .navbar ul li:hover a {
+    color: rgb(194, 14, 14);
+}
+
+.service-items .service-list h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 4rem;
+    font-weight: bolder;
+    color: rgb(60, 60, 122);
+}
+
+.service-items .service-list p {
+    padding: 0.4rem;
+    margin-left: 1.5rem;
+    line-height: 1.8rem;
+    word-spacing: 2px;
+    font-size: 1.1rem;
+    color: #444;
+    width: 95%;
+}
+
+.service-items .service-list span {
+    border-bottom: 8px solid rgb(194, 14, 14);
+    width: 100px;
+}
+
+.service-we-offer {
+    margin: 1rem 1.5rem;
+}
+
+.service-we-offer p {
+    margin: 0.6rem 0;
+    width: 95%;
+    color: #444;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    word-spacing: 2px;
+    padding: 0.4rem;
+}
+
+.portfolio {
+    background: #f3f1f1;
+    height: 700px;
+}
+
+.portfolio h1 {
+    margin-left: 8rem;
+    padding-top: 3rem;
+    font-size: 2rem;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0.8rem;
+    align-items: center;
+}
+
+.portfolio-item {
+  flex-basis: 31%;
+  padding: 1rem;
+
+}
+
+.portfolio-item img {
+    width: 300px;
+    height: 200px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.portfolio-item p {
+    width: 300px;
+}
+
+/*--------Contact Us---------*/
+
+.contact-us {
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-us-item {
+    flex-basis: 31%;
+    margin: 10px;
+}
+
+.contact-us-item iframe {
+    width: 350px;
+    height: 400px;
+}
+
+.contact-us-item h1 {
+    margin-bottom: 15px;
+}
+
+.contact-us-item p i {
+    margin-right: 15px;
+    color:rgb(194, 14, 14);
+}
+
+.contact-us-item p {
+    margin-top: 25px;
+}
+
+.contact-us-item p:nth-child(1) {
+    text-align-last: justify;
+}
+
+.contact-us-item input {
+    width: 270px;
+    height: 50px;
+    margin-top: 25px;
+    background: #f3f1f1;
+    outline: none;
+    border: none;
+    border: 1px solid #555;
+}
+
+.contact-us-item textarea {
+    width: 300px;
+    height: 100px;
+    margin-top: 25px;
+    background: #f3f1f1;
+    border: 1px solid #555;
+}
+
+.contact-us-item button {
+    margin-top: 15px;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(194, 14, 14);
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.contact-us-item input::placeholder {
+    font-size: 15px;
+    padding-left: 12px;
+}
+
+.contact-us-item textarea::placeholder {
+    font-size: 18px;
+    padding-left: 12px;
+    padding-top: 10px;
+}
+
+
+
+
+
+
